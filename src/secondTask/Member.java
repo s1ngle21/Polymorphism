@@ -12,7 +12,6 @@ public abstract class Member {
         this.maxJumpDist = maxJumpDist;
     }
 
-
     public String getName() {
         return name;
     }
@@ -23,7 +22,6 @@ public abstract class Member {
             System.out.println("Member " + getName() + " passed distance " + distance + " meters.");
         } else
             System.out.println("Member " + getName() + " did not passed distance " + distance + " meters. He run " + maxRunDist + " meters.");
-
     }
 
     public void jump(double height) {
@@ -32,6 +30,5 @@ public abstract class Member {
             System.out.println("Member " + getName() + " overcome wall with " + height + " meters.");
         } else
             System.out.println("Member " + getName() + " did not overcome wall with " + height + " meters. He jumped " + maxJumpDist + " meters.");
-
     }
 }
