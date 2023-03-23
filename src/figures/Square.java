@@ -1,6 +1,6 @@
-package areaOfFigures;
+package figures;
 
-public class Square implements Area {
+public class Square implements Shape {
     private double side;
 
     public Square(double sdie) {
@@ -8,7 +8,7 @@ public class Square implements Area {
     }
 
     @Override
-    public double getAreaOfFigure() {
+    public double getArea() {
         return side * side;
     }
 }

@@ -1,4 +1,4 @@
-package areaOfFigures;
+package figures;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,17 +6,17 @@ public class Main {
         Square square = new Square(3.56);
         Circle circle = new Circle(4.78);
 
-        Area[] areas = {triangle, square, circle};
-        double totalArea = getTotalArea(areas);
+        Shape[] shapes = {triangle, square, circle};
+        double totalArea = getTotalArea(shapes);
 
         System.out.printf("Total area is: %.2f", totalArea);
     }
 
-    public static double getTotalArea(Area[] areas) {
+    public static double getTotalArea(Shape[] shapes) {
         double totalArea = 0.0;
 
-        for (Area area : areas) {
-            totalArea = totalArea + area.getAreaOfFigure();
+        for (Shape shape : shapes) {
+            totalArea = totalArea + shape.getArea();
         }
         return totalArea;
     }

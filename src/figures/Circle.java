@@ -1,6 +1,6 @@
-package areaOfFigures;
+package figures;
 
-public class Circle implements Area {
+public class Circle implements Shape {
     private double radius;
 
     public Circle(double radius) {
@@ -8,7 +8,7 @@ public class Circle implements Area {
     }
 
     @Override
-    public double getAreaOfFigure() {
+    public double getArea() {
         return Math.PI * radius * radius;
     }
 }

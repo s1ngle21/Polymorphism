@@ -10,7 +10,7 @@ public class Wall extends Obstacle {
 
 
     @Override
-    public void overcome(Member member) {
-        member.jump(height);
+    public void overcome(Participant participant) {
+        participant.jump(height);
     }
 }

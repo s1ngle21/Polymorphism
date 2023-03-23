@@ -1,6 +1,6 @@
-package areaOfFigures;
+package figures;
 
-public class Triangle implements Area {
+public class Triangle implements Shape {
     private double side;
     private double height;
 
@@ -9,7 +9,7 @@ public class Triangle implements Area {
         this.height = height;
     }
 
-    public double getAreaOfFigure() {
+    public double getArea() {
         return 0.5 * side * height;
     }
 }

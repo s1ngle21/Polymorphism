@@ -2,5 +2,5 @@ package secondTask;
 
 public abstract class Obstacle {
 
-    public abstract void overcome(Member member);
+    public abstract void overcome(Participant participant);
 }

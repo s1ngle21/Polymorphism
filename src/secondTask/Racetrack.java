@@ -8,7 +8,7 @@ public class Racetrack extends Obstacle {
     }
 
     @Override
-    public void overcome(Member member) {
-        member.run(length);
+    public void overcome(Participant participant) {
+        participant.run(length);
     }
 }
