@@ -7,17 +7,8 @@ public class Main {
         Circle circle = new Circle(4.78);
 
         Shape[] shapes = {triangle, square, circle};
-        double totalArea = getTotalArea(shapes);
+        double totalArea = Shape.getTotalArea(shapes);
 
         System.out.printf("Total area is: %.2f", totalArea);
-    }
-
-    public static double getTotalArea(Shape[] shapes) {
-        double totalArea = 0.0;
-
-        for (Shape shape : shapes) {
-            totalArea = totalArea + shape.getArea();
-        }
-        return totalArea;
     }
 }
